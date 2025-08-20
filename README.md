@@ -15,10 +15,10 @@ Scipy  1.14.1
    [The Hyperspectral dataset link.](https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes#Pavia_University_scene)
 
 2. To train the "train_model.py" with dataset PvaiaU, which will generate checkpoint: '/net_resnet18.pkl'. You can try other targetmodel, such as VGG, Inc-v3.  
-                      ` $ python train_model.py --dataset PaviaU --train `  
+                      <pre> ```                  $ python train_model.py --dataset PaviaU --train ``` </pre>   
 
 3.  Run the "main.py" to generate adversarial examples.  
-     ` $ python "main.py" --dataset PaviaU`  
+                   <pre> ```                  $ python "main.py" --dataset PaviaU  ``` </pre>  
 
 
 # Related works
