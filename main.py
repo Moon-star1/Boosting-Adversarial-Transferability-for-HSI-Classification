@@ -99,7 +99,7 @@ def str2bool(v):
 def main():
     parser = argparse.ArgumentParser(description='PyTorch')
     parser.add_argument('--white_box', type=str, default='resnet18', help='resnet18, vgg11')
-    parser.add_argument('--attacks', type=str, default='ours_MI',
+    parser.add_argument('--our_attacks', type=str, default='ours_MI',
                     help='class in attack:  ours_FGSM, ours_MI ')
     parser.add_argument('--loss_fn', type=str, default='CE', help='cross-entropy loss')
     parser.add_argument('--steps', type=int, default=20, help=' iteration steps (default: 20)')
@@ -170,7 +170,7 @@ def main():
 
         pred_y_adv = np.empty((len(TestLabel)), dtype='float32')
 
-        adversor = getattr(attack, args.attacks)(args.white_box, args.depth, args.fsl_coef,  pre_model,
+        adversor = getattr(attack, args.our_attacks)(args.white_box, args.depth, args.fsl_coef,  pre_model,
                                                      loss_fn=args.loss_fn, steps=args.steps, epsilon=args.epsilon,
                                                      num_copies=args.num_copies, num_block=args.num_block)
         # Test_advSample
@@ -234,3 +234,4 @@ def main():
 if __name__=='__main__':
 
     main()
+
