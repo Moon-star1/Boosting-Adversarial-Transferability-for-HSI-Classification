@@ -5,10 +5,10 @@ This repository contains code to reproduce results from the paper:
 Chun Liu, Bingqian Zhu, Tao Xu, Zheng Zheng, Zheng Li, Wei Yang, Zhigang Han, Jiayao Wang
 
 # Requirements  
-pytorch 2.4.0  
-python 3.10.8  
-Numpy 1.26.4    
-scipy 1.14.1  
+Pytorch 2.4.0  
+Python  3.10.8  
+Numpy  1.26.4    
+Scipy  1.14.1  
  
 # Usage   
 1. The hyperspectral dataset is sourced from the link below, you can download the dataset and place it under the 900(1000)\_PaviaU01 folder. You can use your own dataset by matlab, and the "SelectSample.m" file can help you split the training set and the test set.  
